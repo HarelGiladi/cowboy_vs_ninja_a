@@ -14,6 +14,8 @@ class Team2:public Team{
         Team2(const Team2& other);
         Team2(Character *chief);
         Team2(Team2&& other)noexcept;
+        Team2& operator=(const Team2& other);
+        Team2& operator=( Team2&& other)noexcept;
         
         ~Team2();
         

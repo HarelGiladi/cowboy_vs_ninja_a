@@ -15,7 +15,8 @@ class Team {
         Team(const Team& other);
         Team(Character *chief);
         Team(Team&& other)noexcept;
-       
+        Team& operator=(const Team& other);
+        Team& operator=( Team&& other)noexcept;
         ~Team();
        
         int stillAlive();
